@@ -1,0 +1,26 @@
+{
+  "evidence_gate": {
+    "at_least_one_experiment": true,
+    "best_reproduced": true,
+    "test_metric_is_finite": true
+  },
+  "evidence_gate_passed": true,
+  "experiment_id": "exp-06",
+  "model": {
+    "coefficients": [
+      1.486195445347768,
+      2.839479897818984,
+      -0.7106913010911666
+    ],
+    "degree": 2,
+    "ridge": 0.1,
+    "type": "polynomial_regression"
+  },
+  "parameters": {
+    "degree": 2,
+    "ridge": 0.1
+  },
+  "reproduction_delta": 0.0,
+  "test_metric": 0.16674672345764005,
+  "validation_metric": 0.13328793300158087
+}

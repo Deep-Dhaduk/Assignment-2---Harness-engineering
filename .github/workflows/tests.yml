@@ -1,0 +1,29 @@
+name: test-harnesses
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test Part A
+        run: python -m unittest discover -s part-a-openrouter-harness/tests -v
+      - name: Test original DeepSeek plugins
+        run: |
+          npm test --prefix part-b-deepseek-harness/custom-plugins/project-memory
+          npm test --prefix part-b-deepseek-harness/custom-plugins/evidence-gate
+      - name: Check original DeepSeek plugin syntax
+        run: |
+          npm run check --prefix part-b-deepseek-harness/custom-plugins/project-memory
+          npm run check --prefix part-b-deepseek-harness/custom-plugins/evidence-gate
+      - name: Test Part C
+        run: python -m unittest discover -s part-c-autoresearch-harness/tests -v

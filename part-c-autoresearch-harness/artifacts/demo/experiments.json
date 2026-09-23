@@ -1,0 +1,170 @@
+{
+  "failures": [],
+  "hypothesis": "A quadratic model will improve on the linear baseline without the variance of higher degrees.",
+  "metric": "mean_squared_error",
+  "objective": "Minimize held-out mean squared error on a noisy nonlinear regression problem.",
+  "planner": "deterministic-heuristic",
+  "plugin": "synthetic-polynomial-regression",
+  "results": [
+    {
+      "experiment_id": "exp-06",
+      "model": {
+        "coefficients": [
+          1.486195445347768,
+          2.839479897818984,
+          -0.7106913010911666
+        ],
+        "degree": 2,
+        "ridge": 0.1,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=2, ridge=0.1, validation MSE=0.133288",
+      "parameters": {
+        "degree": 2,
+        "ridge": 0.1
+      },
+      "train_metric": 0.1440507209858864,
+      "validation_metric": 0.13328793300158087
+    },
+    {
+      "experiment_id": "exp-05",
+      "model": {
+        "coefficients": [
+          1.4867432872718473,
+          2.840658188235368,
+          -0.7108511905688516
+        ],
+        "degree": 2,
+        "ridge": 0.01,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=2, ridge=0.01, validation MSE=0.133899",
+      "parameters": {
+        "degree": 2,
+        "ridge": 0.01
+      },
+      "train_metric": 0.14404528464044844,
+      "validation_metric": 0.13389924932321065
+    },
+    {
+      "experiment_id": "exp-04",
+      "model": {
+        "coefficients": [
+          1.486804177787313,
+          2.840789169529304,
+          -0.7108689614288107
+        ],
+        "degree": 2,
+        "ridge": 0.0,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=2, ridge=0, validation MSE=0.133968",
+      "parameters": {
+        "degree": 2,
+        "ridge": 0.0
+      },
+      "train_metric": 0.1440452296825168,
+      "validation_metric": 0.13396769660598828
+    },
+    {
+      "experiment_id": "exp-07",
+      "model": {
+        "coefficients": [
+          1.4850678114154265,
+          2.820877037384917,
+          -0.7107164145358572,
+          0.0035774698742574874
+        ],
+        "degree": 3,
+        "ridge": 0.0,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=3, ridge=0, validation MSE=0.136273",
+      "parameters": {
+        "degree": 3,
+        "ridge": 0.0
+      },
+      "train_metric": 0.14383621120174364,
+      "validation_metric": 0.13627345881756198
+    },
+    {
+      "experiment_id": "exp-10",
+      "model": {
+        "coefficients": [
+          1.4448066382779314,
+          2.8190573857076004,
+          -0.66508995580435,
+          0.003981093997490723,
+          -0.005905214802733017
+        ],
+        "degree": 4,
+        "ridge": 0.0,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=4, ridge=0, validation MSE=0.137364",
+      "parameters": {
+        "degree": 4,
+        "ridge": 0.0
+      },
+      "train_metric": 0.14253358907991764,
+      "validation_metric": 0.13736358681903388
+    },
+    {
+      "experiment_id": "exp-03",
+      "model": {
+        "coefficients": [
+          -0.7437132572632115,
+          2.781573639712181
+        ],
+        "degree": 1,
+        "ridge": 0.1,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=1, ridge=0.1, validation MSE=4.147926",
+      "parameters": {
+        "degree": 1,
+        "ridge": 0.1
+      },
+      "train_metric": 3.9724082946003665,
+      "validation_metric": 4.147925889329294
+    },
+    {
+      "experiment_id": "exp-02",
+      "model": {
+        "coefficients": [
+          -0.7436680360095425,
+          2.782715133782071
+        ],
+        "degree": 1,
+        "ridge": 0.01,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=1, ridge=0.01, validation MSE=4.148990",
+      "parameters": {
+        "degree": 1,
+        "ridge": 0.01
+      },
+      "train_metric": 3.9724033048930845,
+      "validation_metric": 4.1489900327112545
+    },
+    {
+      "experiment_id": "exp-01",
+      "model": {
+        "coefficients": [
+          -0.7436630091346147,
+          2.7828420242916097
+        ],
+        "degree": 1,
+        "ridge": 0.0,
+        "type": "polynomial_regression"
+      },
+      "observations": "degree=1, ridge=0, validation MSE=4.149109",
+      "parameters": {
+        "degree": 1,
+        "ridge": 0.0
+      },
+      "train_metric": 3.9724032544502066,
+      "validation_metric": 4.149108785925783
+    }
+  ]
+}
